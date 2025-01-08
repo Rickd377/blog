@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@keyframes moveBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  min-height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  color: #121725;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.authentication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: linear-gradient(45deg, #4c8eff, #94bbff);
+}
+.authentication [class^=form-] {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 450px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.authentication [class^=form-] .input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.authentication [class^=form-] .input-wrapper input {
+  width: 100%;
+  padding: 0.5em 0.6em;
+  border-radius: 0.3rem;
+  border: 1px solid #d5d5d5;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.authentication [class^=form-] .input-wrapper input:not(:focus):not(:-moz-placeholder-shown) {
+  border-color: #94bbff;
+}
+.authentication [class^=form-] .input-wrapper input:not(:focus):not(:placeholder-shown) {
+  border-color: #94bbff;
+}
+.authentication [class^=form-] .input-wrapper input:not(:-moz-placeholder-shown) {
+  outline-color: #94bbff;
+}
+.authentication [class^=form-] .input-wrapper input:focus-within, .authentication [class^=form-] .input-wrapper input:not(:placeholder-shown) {
+  outline-color: #94bbff;
+}
+.authentication [class^=form-] .input-wrapper input:not(:-moz-placeholder-shown) ~ label {
+  color: #4c8eff;
+  font-size: 0.75rem;
+  top: 0;
+  left: 0.8em;
+}
+.authentication [class^=form-] .input-wrapper input:focus-within ~ label, .authentication [class^=form-] .input-wrapper input:not(:placeholder-shown) ~ label {
+  color: #4c8eff;
+  font-size: 0.75rem;
+  top: 0;
+  left: 0.8em;
+}
+.authentication [class^=form-] .input-wrapper input:not(:-moz-placeholder-shown) ~ .icon {
+  color: #4c8eff;
+}
+.authentication [class^=form-] .input-wrapper input:focus-within ~ .icon, .authentication [class^=form-] .input-wrapper input:not(:placeholder-shown) ~ .icon {
+  color: #4c8eff;
+}
+.authentication [class^=form-] .input-wrapper input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+.authentication [class^=form-] .input-wrapper input::placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+.authentication [class^=form-] .input-wrapper .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  right: 0.7em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  color: #777777;
+}
+.authentication [class^=form-] .input-wrapper .icon.fa-eye-slash, .authentication [class^=form-] .input-wrapper .icon.fa-eye {
+  cursor: pointer;
+}
+.authentication [class^=form-] .input-wrapper label {
+  position: absolute;
+  left: 0.7em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777777;
+  padding-inline: 0.2em;
+  background-color: white;
+  pointer-events: none;
+  transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+}
+.authentication [class^=form-] .submit-btn {
+  width: 100%;
+  padding: 0.5em 0.6em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ffa1ff, #94bbff);
+  background-size: 200%;
+  background-position: left;
+  border-radius: 0.3rem;
+  border: 1px solid #777777;
+  animation: moveBg 5s linear infinite;
+}
+.authentication [class^=form-] .submit-btn:hover {
+  animation-play-state: paused;
+}
+.authentication [class^=form-] .account-text {
+  width: 100%;
+  text-align: center;
+}
+.authentication [class^=form-] .account-text a {
+  text-decoration: underline;
+  color: #4c8eff;
+}
+.authentication [class^=form-] .account-text a:visited {
+  color: #2e5599;
+}/*# sourceMappingURL=style.css.map */

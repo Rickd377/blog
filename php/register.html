@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Rick Deurloo">
+  <meta name="description" content="Website description">
+  <meta name="keywords" content="Website keywords">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+
+  <link rel="icon" type="image/x-icon" href="../assets/favicon-black.ico" media="(prefers-color-scheme: white)">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon-white.ico" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="../styles/dist/css/style.css">
+
+  <title>Blog | login</title>
+</head>
+<body class="authentication">
+  
+  <div class="form-register">
+    <h2 class="title">Login</h2>
+    <div class="input-wrapper">
+      <input type="text" name="username" id="username" placeholder="Username" required>
+      <i class="fa-light fa-user icon"></i>
+      <label for="username">Username</label>
+    </div>
+    <div class="input-wrapper">
+      <input type="email" name="email" id="email" placeholder="Email address" required>
+      <i class="fa-light fa-envelope icon"></i>
+      <label for="email">Email address</label>
+    </div>
+    <div class="input-wrapper">
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <i class="fa-light fa-eye-slash icon"></i>
+      <label for="password">Password</label>
+    </div>
+    <div class="input-wrapper">
+      <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+      <i class="fa-light fa-eye-slash icon"></i>
+      <label for="confirm-password">Confirm password</label>
+    </div>
+    <button class="submit-btn">Login</button>
+    <p class="account-text">Don't have an account yet? <a href="register.html">Register</a></p>
+  </div>
+  
+  <script src="../js/general.js"></script>
+</body>
+</html>

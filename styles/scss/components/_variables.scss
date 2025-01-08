@@ -1,0 +1,38 @@
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$oswald: 'Oswald', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+$bg-color: #f8f8f8;
+$text: #121725;
+$black: black;
+$white: white;
+
+$red: #dd1111;
+$orange: #ff6f00;
+$yellow: #ff3;
+$green: #33dd22;
+$blue: #4c8eff;
+$purple: #6503e5;
+$pink: #ff62ff;
+$gray: #aaa;
+
+// light colors
+$red-light: mix($white, $red, 40%);
+$orange-light: mix($white, $orange, 40%);
+$yellow-light: mix($white, $yellow, 40%);
+$green-light: mix($white, $green, 40%);
+$blue-light: mix($white, $blue, 40%);
+$purple-light: mix($white, $purple, 40%);
+$pink-light: mix($white, $pink, 40%);
+$gray-light: mix($white, $gray, 50%);
+
+// dark colors
+$red-dark: mix($black, $red, 40%);
+$orange-dark: mix($black, $orange, 40%);
+$yellow-dark: mix($black, $yellow, 40%);
+$green-dark: mix($black, $green, 40%);
+$blue-dark: mix($black, $blue, 40%);
+$purple-dark: mix($black, $purple, 40%);
+$pink-dark: mix($black, $pink, 40%);
+$gray-dark: mix($black, $gray, 30%);
