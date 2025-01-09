@@ -10,6 +10,7 @@ html, body, h1, h2, h3, h4, h5, h6, p {
 body {
   line-height: 1;
   min-height: 100dvh;
+  background-color: $background;
   font-family: $poppins;
   color: $text;
 }
