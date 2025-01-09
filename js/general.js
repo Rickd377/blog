@@ -42,7 +42,7 @@ document.querySelectorAll('.comment-opener').forEach(function(element) {
   element.addEventListener('click', function() {
     const commentSection = element.nextElementSibling;
     if (commentSection.style.display === 'none' || commentSection.style.display === '') {
-      commentSection.style.display = 'block';
+      commentSection.style.display = 'flex';
     } else {
       commentSection.style.display = 'none';
     }
